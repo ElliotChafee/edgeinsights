@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tax Info | EDGE Insights</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B3A6B;
+    --gold: #C9A84C;
+    --bg: #dce6ef;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', sans-serif; color: #222; background: var(--bg); }
+
+  nav {
+    background: var(--navy);
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 14px 0;
+  }
+  nav a { color: #fff; text-decoration: none; font-weight: 700; letter-spacing: .03em; font-size: 14px; }
+  nav a:hover { color: var(--gold); }
+
+  main {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 50px 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+
+  .left img { max-width: 100%; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.12); margin-bottom: 24px; }
+  .left p { line-height: 1.6; font-size: 17px; margin-bottom: 18px; }
+  .left h3 { font-family: 'Lora', serif; color: var(--navy); margin-bottom: 8px; }
+
+  .callout {
+    background: #f2f2f2;
+    border: 1px solid #d8d8d8;
+    border-radius: 16px;
+    padding: 20px 26px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  .callout strong { color: var(--navy); }
+
+  .infographics { display: flex; gap: 16px; margin-bottom: 24px; }
+  .infographics img { width: 50%; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.12); }
+
+  .code-btn {
+    display: block;
+    text-align: center;
+    background: #3d4a7a;
+    color: #fff;
+    padding: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .code-btn:hover { background: var(--navy); }
+
+  footer {
+    background: var(--navy);
+    color: #fff;
+    padding: 18px 32px;
+    text-align: center;
+    font-size: 14px;
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+
+  @media (max-width: 720px) {
+    main { grid-template-columns: 1fr; }
+    .infographics { flex-direction: column; }
+    .infographics img { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="tax-info.html">Tax Info</a>
+  <a href="ebf-show.html">School Funding 101</a>
+</nav>
+
+<main>
+  <div class="left">
+    <img src="images/tribune-headline.png" alt="Chicago Tribune: Tax hikes loom for South, West sides">
+
+    <p>Palos Township (Tax Year 2023, billed 2024): Homeowners experienced a median <strong>property tax increase of 19.9%</strong> — the largest median jump for any reassessed area in nearly three decades.</p>
+
+    <p>Commercial properties have seen big tax cuts since the pandemic: After filing appeals, many <strong>commercial properties had their tax bills significantly reduced</strong>, which means homeowners now pay a larger share of the overall tax load.</p>
+
+    <h3>Why it matters:</h3>
+    <p>Cook County's property tax system is based on a fixed levy — when commercial assessments decline, the total tax bill doesn't shrink; instead, the burden redistributes, forcing homeowners to absorb more. The combined effects of post-COVID commercial devaluation and appeals have produced double-digit residential tax increases, especially in middle-class south suburban communities like Palos Township.</p>
+  </div>
+
+  <div class="right">
+    <div class="callout">
+      The analyses provided by the Cook County Assessor's Office are at the 10,000-foot level, offering broad views. This summary focuses narrowly on the <strong>impact to homeowners within NPD 117</strong>, highlighting how these broader trends are affecting the local community.
+    </div>
+
+    <div class="infographics">
+      <img src="images/appeals-shift.png" alt="After appeals, the balance shifted — most businesses paid less, most homeowners paid more. Tax bill: 75% of businesses saw decreases, 75% of homeowners saw increases.">
+      <img src="images/appeals-percentages.png" alt="65% successful appeals, 20% average cut for large commercial properties. 25% successful appeals, 9% average cut for small commercial properties.">
+    </div>
+
+    <a class="code-btn" href="https://github.com/" target="_blank" rel="noopener">View my Python Code</a>
+  </div>
+</main>
+
+<footer>
+  EDGE Insights — created by Elliot Chafee &copy;2026 &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/elliotchafee/" target="_blank" rel="noopener">@ElliotChafee</a>
+</footer>
+
+</body>
+</html>

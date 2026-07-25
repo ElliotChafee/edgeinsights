@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EDGE Insights | Exploring Education thru Data</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #1B3A6B;
+    --gold: #C9A84C;
+    --bg: #dce6ef;
+    --slate: #4a6080;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Lato', sans-serif; color: #222; background: var(--bg); }
+
+  header.hero img { width: 100%; display: block; }
+
+  nav {
+    background: var(--navy);
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 14px 0;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: .03em;
+    font-size: 14px;
+  }
+  nav a:hover { color: var(--gold); }
+
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 32px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 40px;
+    align-items: start;
+  }
+  .copy p { margin-bottom: 20px; line-height: 1.6; font-size: 17px; }
+  .copy ul { margin: 0 0 20px 22px; line-height: 1.6; font-size: 17px; }
+  .copy strong { color: var(--navy); }
+
+  .side { display: flex; flex-direction: column; gap: 16px; align-items: center; }
+  .side img { max-width: 100%; border-radius: 4px; box-shadow: 0 2px 10px rgba(0,0,0,0.12); }
+  .side a { text-decoration: none; }
+
+  footer {
+    background: var(--navy);
+    color: #fff;
+    padding: 18px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 14px;
+  }
+  footer .credit { color: var(--gold); }
+  footer .credit strong { color: #fff; }
+  footer .links { display: flex; gap: 20px; align-items: center; }
+  footer .links a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px; height: 22px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .badge.li { background: #0A66C2; }
+  .badge.pdf { background: #c0392b; }
+
+  @media (max-width: 720px) {
+    main { grid-template-columns: 1fr; }
+    footer { flex-direction: column; text-align: center; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="images/hero-banner.png" alt="EDGE Insights — Exploring Education thru Data. Using data to tell the story of North Palos School District 117, a student-led exploration in education analytics.">
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="tax-info.html">Tax Info</a>
+  <a href="ebf-show.html">School Funding 101</a>
+</nav>
+
+<main>
+  <div class="copy">
+    <p>I attended North Palos School District 117 (NPD) — a district that proves data can tell an incredible story.</p>
+    <p>NPD's schools consistently exceed expectations, earning six National Blue Ribbon Awards since 2012. This achievement stands out even more knowing that 64% of students are low-income and 44% are English Learners.</p>
+    <p>Beyond academics, NPD demonstrates strong financial stewardship. By partnering with the State to rewrite Illinois' school funding formula, the district increased annual state aid from $4 million to $30 million annually.</p>
+    <p>This financial transformation allowed NPD to:</p>
+    <ul>
+      <li>Invest $80 million in school expansion and modernization — without raising property taxes.</li>
+      <li>Provide $15 million in property tax relief to local residents.</li>
+    </ul>
+  </div>
+
+  <div class="side">
+    <a href="ebf-show.html">
+      <img src="images/school-funding-101.png" alt="School Funding 101 — view the presentation">
+    </a>
+    <img src="images/tax-bill-example.png" alt="Sample property tax bill showing where your money goes">
+  </div>
+</main>
+
+<footer>
+  <div class="credit">EDGE Insights — created by <strong>Elliot Chafee</strong> &copy;2026</div>
+  <div class="links">
+    <a href="https://www.linkedin.com/in/elliotchafee/" target="_blank" rel="noopener">
+      <span class="badge li">in</span> @ElliotChafee
+    </a>
+    <a href="resume.pdf" target="_blank" rel="noopener">
+      <span class="badge pdf">PDF</span> Resume
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
